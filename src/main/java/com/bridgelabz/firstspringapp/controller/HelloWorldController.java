@@ -1,9 +1,6 @@
 package com.bridgelabz.firstspringapp.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 //@RequestMapping("/hello")
@@ -18,5 +15,12 @@ public class HelloWorldController {
             @RequestParam(value = "name") String Sunil
     ) {
         return "Hello" + Sunil + "!";
+    }
+
+    @GetMapping("/param{name}")
+    public String sayHelloParam(
+            @PathVariable String name
+    ) {
+        return "Hello" + name + "----!";
     }
 }
