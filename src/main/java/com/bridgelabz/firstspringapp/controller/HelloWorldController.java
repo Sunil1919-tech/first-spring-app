@@ -1,5 +1,6 @@
 package com.bridgelabz.firstspringapp.controller;
 
+import com.bridgelabz.firstspringapp.dto.User;
 import org.springframework.web.bind.annotation.*;
 
 @RestController

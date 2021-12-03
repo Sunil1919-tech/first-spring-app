@@ -1,4 +1,4 @@
-package com.bridgelabz.firstspringapp.controller;
+package com.bridgelabz.firstspringapp.dto;
 
 public class User {
     private String firstName;
